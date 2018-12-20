@@ -252,6 +252,7 @@ footer{
 }
 .fclt ul{
   list-style-type: none;
+  padding: 0;
 }
 .rt1, .rt2, .rt3, .rt4{
   padding: 0 10px;
