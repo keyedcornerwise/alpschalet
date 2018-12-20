@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link href="css/normalize.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates" rel="stylesheet">
+    <link href="css/ss.css" rel="stylesheet" type="text/css" media="screen">
+
+    <title>Contact Us - Alpschalet Resort</title>
+  </head>
+
+  <body>
+    <header class="hd">
+      <h1><a href="#">Alpschalet Resort</a></h1>
+      <!-- <a href="index.html"><img src="img/chalet.jpg" alt="Alps" title="Alps"/></a> -->
+    </header>
+    <nav class="nv">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#ab">About</a></li>
+        <li><a href="accommodation.html">Accommodation</a></li>
+        <li><a href="travelguide.html">Travel Guide</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+      </ul>
+    </nav>
+    <main class="mn cu">
+      <div class="bs">
+
+      </div>
+      <div class="hdg">
+        <h2>Contact Us</h2>
+      </div>
+      <div class="contact">
+        <form action="send/sendmail.php" method="post">
+          <fieldset>
+            <table>
+              <tr>
+                <td><label for="first">First Name:</label></td>
+                <td><input type="text" name="firstname" id="first" minlength="3" maxlength="15" required /><br /></td>
+              </tr>
+              <tr>
+                <td><label for="last">Last Name:</label></td>
+                <td><input type="text" name="lastname" id="last" minlength="3" maxlength="15" required /><br /></td>
+              <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" name="email" id="email" maxlength="50" required /><br /></td>
+              </tr>
+              <tr>
+                <td><label for="location">Location: </label></td>
+                <td>
+                  <select name="location" id="location">
+                    <option value="italy">Italy</option>
+                    <option value="austria">Austria</option>
+                    <option value="france">France</option>
+                    <option value="switzerland">Switzerland</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td><label for="comments">Comments:</label></td>
+                <td><textarea name="comments" id="comments" maxlength="50" required></textarea><br /></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td><input type="submit" name="submit" value="submit" id="sub"><input type="reset" name="reset" value="reset" id="res"></td>
+              </tr>
+            </table>
+          </fieldset>
+        </form>
+      </div>
+      <div class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m24!1m12!1m3!1d3759.054512148641!2d9.533885437780894!3d46.85553199961446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m9!3e6!4m1!2sM%C3%BChle+122+Sch%C3%BCbelbach+8862+Switzerland!4m5!1s0x4789459fb534be51%3A0x38c7fdcd674c57d!2sAlps!3m2!1d46.887619099999995!2d9.656999599999999!5e0!3m2!1sen!2sie!4v1545135643565" allowfullscreen></iframe>
+      </div>
+    </main>
+    <footer class="ft">
+      <div class="fs">
+        <h4>Alpschalet</h4>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Terms &amp; Condition</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="sc">
+        <h4>Social</h4>
+        <ul>
+          <li><a href="https://www.facebook.com"><img src="img/facebook.png" alt="Facebook" title="Facebook" /></a></li>
+          <li><a href="https://www.instagram.com"><img src="img/instagram.png" alt="Instagram" title="Instagram" /></a></li>
+          <li><a href="https://www.twitter.com"><img src="img/twitter.png" alt="Twitter" title="Twitter" /></a></li>
+        </ul>
+      </div>
+      <div class="th">
+        <h4>Contact</h4>
+        <address>
+          Mühle 122<br />
+          Schübelbach<br />
+          Chur<br />
+          Switzerland<br />
+          8862<br />
+        </address>
+        <a href="tel:05551329823">055 513 29823</a>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link href="css/normalize.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates" rel="stylesheet">
+    <link href="css/ss.css" rel="stylesheet" type="text/css" media="screen">
+
+    <title>Accommodation - Alpschalet Resort</title>
+  </head>
+
+  <body>
+    <header class="hd">
+      <h1><a href="#">Alpschalet Resort</a></h1>
+      <!-- <a href="index.html"><img src="img/chalet.jpg" alt="Alps" title="Alps"/></a> -->
+    </header>
+    <nav class="nv">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#ab">About</a></li>
+        <li><a href="accommodation.html">Accommodation</a></li>
+        <li><a href="travelguide.html">Travel Guide</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+      </ul>
+    </nav>
+    <main class="mn acc">
+      <div class="chalet">
+
+      </div>
+      <div class="hdg">
+        <h2>Ledro Mountain Chalet</h2>
+      </div>
+      <div class="rm1">
+        <img src="img/acc/ledro1.jpg" alt="Chalet" />
+      </div>
+      <div class="rm2">
+        <img src="img/acc/ledro2.jpg" alt="Chalet" />
+      </div>
+      <div class="rm3">
+        <img src="img/acc/ledro3.jpg" alt="Chalet" />
+      </div>
+      <div class="rm4">
+        <img src="img/acc/ledro4.jpg" alt="Chalet" />
+      </div>
+      <div class="des">
+        <h3>Description</h3>
+        <hr />
+        <p>Located in Ledro, Ledro Mountain Chalet has free WiFi, and guests can enjoy a seasonal outdoor swimming pool, barbecue facilities and a garden.</p>
+
+        <p>The chalet provides guests with a terrace, mountain views, a seating area, a flat-screen TV, a fully equipped kitchenette with a dishwasher and a microwave, and a private bathroom with bidet. A balcony with garden views is offered in all units.</p>
+
+        <p>An Italian breakfast is available each morning at Ledro Mountain Chalet.</p>
+
+        <p>The wellness area at the accommodation is comprised of a hot tub and a sauna.</p>
+
+        <p>Ledro Mountain Chalet provides a playground.</p>
+
+        <p>Riva del Garda is 19.3 km from the chalet. Villafranca Airport is 103 km from the property.</p>
+      </div>
+      <aside class="bk">
+        <h3>Book</h3>
+        <hr />
+
+        <form class="book" action="send/book.php" method="post">
+          <fieldset>
+            <table>
+              <tr>
+                <td><label for="first">First Name:</label></td>
+                <td><input type="text" name="firstname" id="first" minlength="3" maxlength="15" required /><br /></td>
+              </tr>
+              <tr>
+                <td><label for="last">Last Name:</label></td>
+                <td><input type="text" name="lastname" id="last" minlength="3" maxlength="15" required /><br /></td>
+              </tr>
+              <tr>
+                <td><label for="date">Date:</label></td>
+                <td><input type="date" name="date" id="date" required /><br /></td>
+              </tr>
+              <tr>
+                <td><label for="nights">Nights:</label></td>
+                <td><input type="number" name="nights" id="nights" required /><br /></td>
+              </tr>
+              <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" name="email" id="email" maxlength="50" required /><br /></td>
+              </tr>
+              <tr>
+                <td><label for="room">Room Option: </label></td>
+                <td>
+                  <select name="room" id="room">
+                    <option value="twin">Twin Bed</option>
+                    <option value="doublee">Double Ensuite</option>
+                    <option value="doubles">Double Shared</option>
+                    <option value="family">Family</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td><input type="submit" name="submit" value="Book Now" id="book"><input type="reset" name="reset" value="Reset" id="res"></td>
+              </tr>
+            </table>
+          </fieldset>
+        </form>
+      </aside>
+      <div class="fclt">
+        <h3>Facilities</h3>
+        <hr />
+        <ul class="coltwo">
+          <li>Breakfast</li>
+          <li>Room service</li>
+          <li>Heating</li>
+          <li>Soundproof rooms</li>
+          <li>Family rooms</li>
+          <li>Non-smoking rooms</li>
+          <li>Swimming pool</li>
+          <li>Kids' pool</li>
+          <li>Steam room</li>
+          <li>Sauna</li>
+          <li>Lounge</li>
+          <li>Outdoor pool (seasonal)</li>
+          <li>Picnic area</li>
+          <li>BBQ facilities</li>
+          <li>Garden</li>
+        </ul>
+      </div>
+      <div class="rt1">
+        <h4>Room Type</h4>
+        <hr />
+        <p>Twin Bed Shared</p>
+
+        <p><b>Guest Size:</b> 2</p>
+      </div>
+      <div class="rt2">
+        <h4>Room Type</h4>
+        <hr />
+        <p>Double Bed Ensuite</p>
+
+        <p><b>Guest Size:</b> 4</p>
+      </div>
+      <div class="rt3">
+        <h4>Room Type</h4>
+        <hr />
+        <p>Double Bed Shared</p>
+
+        <p><b>Guest Size:</b> Up to 6</p>
+      </div>
+      <div class="rt4">
+        <h4>Room Type</h4>
+        <hr />
+        <p>Family</p>
+
+        <p><b>Guest Size:</b> 4</p>
+      </div>
+    </main>
+    <footer class="ft">
+      <div class="fs">
+        <h4>Alpschalet</h4>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Terms &amp; Condition</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="sc">
+        <h4>Social</h4>
+        <ul>
+          <li><a href="https://www.facebook.com"><img src="img/facebook.png" alt="Facebook" title="Facebook" /></a></li>
+          <li><a href="https://www.instagram.com"><img src="img/instagram.png" alt="Instagram" title="Instagram" /></a></li>
+          <li><a href="https://www.twitter.com"><img src="img/twitter.png" alt="Twitter" title="Twitter" /></a></li>
+        </ul>
+      </div>
+      <div class="th">
+        <h4>Contact</h4>
+        <address>
+          Mühle 122<br />
+          Schübelbach<br />
+          Chur<br />
+          Switzerland<br />
+          8862<br />
+        </address>
+        <a href="tel:05551329823">055 513 29823</a>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,579 @@
+html{
+  font-family: 'Montserrat Alternates', Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+}
+body{
+  text-align: center;
+  background: hsl(0, 00%, 99%);
+  color: hsl(0, 0%, 20%);
+}
+figure{
+  margin: 0;
+}
+img{
+  display: block;
+  max-width: 100%;
+  margin: auto;
+}
+nav > ul, footer ul{
+  padding: 0;
+  list-style-type: none;
+  font-weight: 600;
+}
+nav > ul{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-content: flex-start;
+  width: 100%;
+}
+nav > ul > li > a, a{
+  text-decoration: none;
+}
+nav > ul > li > a{
+  display: block;
+  padding: 10px;
+  color: hsl(0, 0%, 20%);
+}
+nav > ul > li > a:hover{
+  transition: all 0.2s ease-out;
+  transform: scale(1.25) translate(2px, 0);
+}
+a, footer > ul > li > a{
+  color: hsl(360, 100%, 100%);
+}
+div.bs{
+  background: center no-repeat url('../img/bg/alps.jpg');
+  grid-area: bs;
+}
+div.chalet{
+  background: center no-repeat url('../img/bg/ledro-main.jpg');
+  grid-area: chalet;
+}
+div.bs, div.chalet, div.tgtd{
+  height: 50vh;
+  background-size: 100%;
+  display: none;
+}
+div.as, div.so{
+  display: grid;
+  grid-gap: 5px;
+}
+div.so{
+  background-size: 100%;
+}
+figure{
+  position: relative;
+}
+figcaption{
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+  font-weight: 600;
+  font-size: 1.6em;
+  text-shadow: 1px 1px 1px hsl(0, 0%, 0%);
+  background: hsla(0, 0%, 0%, 0.4);
+  padding: 5px;
+  border-radius: 5px;
+}
+header.hd, nav.nv{
+  position: sticky;
+  background: hsl(360, 100%, 100%);
+  z-index: 1;
+}
+header.hd{
+  grid-area: hd;
+  top: 0;
+  height: 100px;
+}
+/* header > h1{
+  text-indent: -9999px;
+  float: left;
+} */
+header img{
+  max-width: 100%;
+  height: 100px;
+}
+header > h1{
+  margin: 0;
+  padding: 20px 0;
+}
+header > h1 a{
+  color: hsl(300, 100%, 25%);
+}
+header > h1:hover, header img:hover, .sc > ul > li > a > img:hover{
+  transition: all 0.2s ease-out;
+  transform: scale(1.05) rotate(0.01turn);
+}
+.sc > ul > li > a > img:hover{
+  transform: scale(0.8) rotate(0.04turn);
+}
+nav.nv{
+  top: 100px;
+  grid-area: nv;
+  display: flex;
+  align-items: center;
+  box-shadow: 1px 1px 1px 1px hsl(0, 0%, 0%);
+}
+main.mn{
+  grid-area: mn;
+}
+footer{
+  margin-top: 10px;
+}
+footer.ft{
+  grid-area: ft;
+}
+.ar1, .ar2, .ar3, .of1, .of2, .of3{
+  overflow: hidden;
+}
+.ar1 img:hover, .ar2 img:hover, .ar3 img:hover,
+.of1 img:hover, .of2 img:hover, .of3 img:hover{
+  transform: scale(1.2);
+  transition: all 0.2s ease-out;
+}
+.ar{
+  grid-area: ar;
+}
+.ar1{
+  grid-area: ar1;
+}
+.ar2{
+  grid-area: ar2;
+}
+.ar3{
+  grid-area: ar3;
+}
+.as{
+  grid-template-areas:
+                      "ar"
+                      "ar1"
+                      "ar2"
+                      "ar3";
+}
+.of{
+  grid-area: of;
+}
+.of1{
+  grid-area: of1;
+}
+.of2{
+  grid-area: of2;
+}
+.of3{
+  grid-area: of3;
+}
+.so{
+  grid-template-areas:
+                      "of"
+                      "of1"
+                      "of2"
+                      "of3";
+}
+.ab{
+  background: hsl(0, 0%, 20%);
+  color: hsl(360, 100%, 100%);
+  padding: 10px;
+  grid-area: ab;
+}
+.ab1{
+  grid-area: ab1;
+}
+.ab2{
+  grid-area: ab2;
+}
+.fs{
+  grid-area: fs;
+}
+.sc{
+  grid-area: sc;
+}
+.sc > ul{
+  display: flex;
+  justify-content: space-evenly;
+}
+.th{
+  grid-area: th;
+}
+footer{
+  padding: 10px 0;
+  background: hsl(0, 0%, 20%);
+  color: hsl(360, 100%, 100%);
+}
+
+/* Heading */
+.hdg{
+  grid-area: hdg;
+}
+
+/* Accommodation */
+
+.rm1, .rm2, .rm3, .rm4{
+  overflow: hidden;
+}
+.rm1 img:hover, .rm2 img:hover, .rm3 img:hover, .rm4 img:hover{
+  transform: scale(1.2);
+  transition: all 0.2s ease-out;
+}
+.rm1{
+  grid-area: rm1;
+}
+.rm2{
+  grid-area: rm2;
+}
+.rm3{
+  grid-area: rm3;
+}
+.rm4{
+  grid-area: rm4;
+}
+.des, .fclt, .bk{
+  padding: 0 10px;
+}
+.des{
+  grid-area: des;
+}
+.des > p{
+  text-align: left;
+}
+.bk{
+  grid-area: bk;
+  background: hsl(42, 76%, 65%);
+  color: hsl(360, 100%, 100%);
+}
+.bk h3, .bk label{
+  text-shadow: 1px 1px 1px hsl(0, 0%, 20%);
+}
+.fclt{
+  grid-area: fclt;
+  background: hsl(0, 0%, 96%);
+}
+.fclt ul{
+  list-style-type: none;
+}
+.rt1, .rt2, .rt3, .rt4{
+  padding: 0 10px;
+  background: #e6e6e6;
+}
+.rt1{
+  grid-area: rt1;
+}
+.rt2{
+  grid-area: rt2;
+}
+.rt3{
+  grid-area: rt3;
+}
+.rt4{
+  grid-area: rt4;
+}
+.acc{
+  display: grid;
+  grid-row-gap: 5px;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+                      "hdg"
+                      "chalet"
+                      "rm1"
+                      "rm2"
+                      "rm3"
+                      "rm4"
+                      "des"
+                      "fclt"
+                      "rt1"
+                      "rt2"
+                      "rt3"
+                      "rt4"
+                      "bk";
+}
+
+.bk select{
+  width: 200px;
+}
+
+/* Mozilla */
+
+/* input[type=number] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+  margin: 0;
+} */
+
+/* For Chrome */
+
+/* input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+} */
+
+/* Travel Guide */
+
+div.tgtd{
+  background: center no-repeat url('../img/bg/tg.jpg');
+  grid-area: tgtd;
+}
+main.tg > div{
+  overflow: hidden;
+}
+main.tg > div img{
+  width: 100%;
+}
+main.tg > div img:hover{
+  transform: scale(1.2);
+  transition: all 0.2s ease-out;
+}
+.td1{
+  grid-area: td1;
+}
+.td2{
+  grid-area: td2;
+}
+.td3{
+  grid-area: td3;
+}
+.td4{
+  grid-area: td4;
+}
+.td5{
+  grid-area: td5;
+}
+.td6{
+  grid-area: td6;
+}
+.td7{
+  grid-area: td7;
+}
+.td8{
+  grid-area: td8;
+}
+.td9{
+  grid-area: td9;
+}
+.td10{
+  grid-area: td10;
+}
+.td11{
+  grid-area: td11;
+}
+.td12{
+  grid-area: td12;
+}
+
+.tg{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 5px;
+  grid-template-areas:
+                      "hdg"
+                      "tgtd"
+                      "td1"
+                      "td2"
+                      "td3"
+                      "td4"
+                      "td5"
+                      "td6"
+                      "td7"
+                      "td8"
+                      "td9"
+                      "td10"
+                      "td11"
+                      "td12";
+}
+
+/* Contact */
+
+.contact{
+  background: hsl(42, 76%, 65%);
+  grid-area: contact;
+  align-items: center;
+  display: flex;
+}
+form, table{
+  text-align: left;
+  width: 100%;
+}
+input, select, textarea{
+  border-radius: 20px;
+  height: 30px;
+}
+input, textarea{
+    width: 90%;
+    padding-left: 15px;
+}
+textarea{
+  height: 100px;
+}
+select{
+    width: 100px;
+    text-align: center;
+}
+td{
+  padding: 10px 0;
+}
+#sub, #res{
+  margin: 10px 0;
+  background: hsl(0, 0%, 20%);
+  color: hsl(360, 100%, 100%);
+  width: 150px;
+  border: none;
+  text-align: center;
+  padding: 0;
+}
+#sub{
+  margin-right: 10px;
+}
+#sub:visited, #res:visited{
+  background: #f00;
+  color: hsl(360, 100%, 100%);
+}
+#sub:hover, #res:hover{
+  background: hsl(0, 0%, 43%);
+  color: hsl(360, 100%, 100%);
+}
+#sub:active, #res:active{
+  background: hsl(360, 100%, 100%);
+  color: hsl(0, 0%, 20%);
+}
+fieldset{
+  border: none;
+}
+.location{
+  grid-area: location;
+}
+iframe{
+  width: 100%;
+  border: none;
+  height: 450px;
+}
+.cu{
+  display: grid;
+  grid-column-gap: 5px;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+                      "bs"
+                      "hdg"
+                      "contact"
+                      "location";
+}
+
+@media screen and (min-width: 769px){
+  div.bs, div.chalet, div.tgtd{
+    display: block;
+  }
+  div.as, div.so, div.ab{
+    display: grid;
+    grid-template-columns: 20px 1fr 1fr 1fr 20px;
+    grid-template-rows: auto auto 50px;
+    grid-column-gap: 20px;
+  }
+  div.ab{
+    background-size: 100%;
+    padding: 0;
+  }
+  div.as{
+    grid-template-areas:
+                          ". ar ar ar ."
+                          ". ar1 ar2 ar3 ."
+                          ". . . . .";
+  }
+  div.so{
+    grid-template-areas:
+                          ". of of of ."
+                          ". of1 of2 of3 ."
+                          ". . . . .";
+  }
+  div.ab{
+    grid-template-areas:
+                          ". ab1 ab1 ab1 ."
+                          ". ab2 ab2 ab2 ."
+                          ". . . . .";
+  }
+  footer{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas:
+                          ". fs th sc ."
+                          ". fs th sc ."
+                          ". fs th sc ."
+  }
+  .acc{
+    grid-gap: 5px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+                        "chalet chalet chalet chalet"
+                        ". hdg hdg ."
+                        "rm1 rm2 rm3 rm4"
+                        "des des fclt fclt"
+                        "rt1 rt1 rt2 rt2"
+                        "rt3 rt3 rt4 rt4"
+                        "bk bk bk bk";
+  }
+  .tg{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 5px;
+    grid-template-areas:
+                        ". . hdg hdg . ."
+                        "td1 td1 td2 td2 td3 td3"
+                        "td4 td4 td4 td5 td5 td5"
+                        "td6 td6 td6 td7 td7 td7"
+                        "td8 td8 td9 td9 td10 td10";
+  }
+  .cu{
+    grid-gap: 5px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+                      "bs bs"
+                      "hdg hdg"
+                      "contact location";
+    }
+}
+
+@media screen and (min-width: 992px){
+  div.bs, div.chalet{
+    height: 55vh;
+  }
+  body{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas:
+                        "hd hd hd nv nv nv nv nv nv nv nv nv"
+                        "mn mn mn mn mn mn mn mn mn mn mn mn"
+                        "ft ft ft ft ft ft ft ft ft ft ft ft"
+
+  }
+  header.hd, nav.nv{
+    box-shadow: 3px 1px 1px 1px hsla(0, 0%, 0%, 0.5);
+  }
+  div.as, div.so, div.ab{
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 5px;
+  }
+  nav.nv{
+    top: 0;
+  }
+  .acc{
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas:
+                        "chalet chalet chalet chalet chalet chalet"
+                        ". hdg hdg hdg hdg ."
+                        "rm1 rm2 rm3 rm4 bk bk"
+                        "des des des des bk bk"
+                        "fclt fclt fclt fclt bk bk"
+                        "rt1 rt1 rt2 rt2 bk bk"
+                        "rt3 rt3 rt4 rt4 bk bk";
+  }
+  .bk{
+    border-radius: 20px 0 0 0;
+  }
+  .coltwo{
+    column-count: 2;
+  }
+}
+
+@media screen and (min-width: 1369px){
+  div.bs, div.chalet{
+    height: 60vh;
+  }
+}
