@@ -85,6 +85,9 @@ header.hd{
   grid-area: hd;
   top: 0;
   height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /* header > h1{
   text-indent: -9999px;
@@ -103,7 +106,7 @@ header > h1 a{
 }
 header > h1:hover, header img:hover, .sc > ul > li > a > img:hover{
   transition: all 0.2s ease-out;
-  transform: scale(1.05) rotate(0.01turn);
+  transform: scale(1.05) rotate(-0.01turn);
 }
 .sc > ul > li > a > img:hover{
   transform: scale(0.8) rotate(0.04turn);
