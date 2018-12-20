@@ -471,6 +471,12 @@ iframe{
     background-size: 100%;
     padding: 0;
   }
+}
+
+@media screen and (min-width: 992px){
+  div.bs, div.chalet{
+    height: 55vh;
+  }
   div.as{
     grid-template-areas:
                           ". ar ar ar ."
@@ -530,9 +536,9 @@ iframe{
     }
 }
 
-@media screen and (min-width: 992px){
+@media screen and (min-width: 1369px){
   div.bs, div.chalet{
-    height: 55vh;
+    height: 60vh;
   }
   body{
     display: grid;
@@ -569,11 +575,5 @@ iframe{
   }
   .coltwo{
     column-count: 2;
-  }
-}
-
-@media screen and (min-width: 1369px){
-  div.bs, div.chalet{
-    height: 60vh;
   }
 }
