@@ -466,7 +466,7 @@ iframe{
   div.as, div.so, div.ab{
     display: grid;
     /* grid-template-columns: 20px 1fr 1fr 1fr 20px; */
-    grid-template-rows: auto auto 50px;
+    /* grid-template-rows: auto auto 50px; */
     grid-column-gap: 20px;
   }
   div.ab{
