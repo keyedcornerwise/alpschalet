@@ -51,7 +51,7 @@ div.chalet{
   grid-area: chalet;
 }
 div.bs, div.chalet, div.tgtd{
-  height: 50vh;
+  height: 30vh;
   background-size: 100%;
   display: none;
 }
@@ -465,7 +465,7 @@ iframe{
   }
   div.as, div.so, div.ab{
     display: grid;
-    grid-template-columns: 20px 1fr 1fr 1fr 20px;
+    /* grid-template-columns: 20px 1fr 1fr 1fr 20px; */
     grid-template-rows: auto auto 50px;
     grid-column-gap: 20px;
   }
