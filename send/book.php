@@ -5,7 +5,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <link href="css/normalize.css" rel="stylesheet" type="text/css" media="screen">
    <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates" rel="stylesheet">
-   <link href="css/ss.css" rel="stylesheet" type="text/css" media="screen">
+   <link href="../css/ss.css" rel="stylesheet" type="text/css" media="screen">
 
    <title>Contact Us - Alpschalet Resort</title>
  </head>
