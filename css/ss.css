@@ -145,6 +145,7 @@ footer.ft{
   grid-area: ar3;
 }
 .as{
+  grid-template-columns: 1fr;
   grid-template-areas:
                       "ar"
                       "ar1"
@@ -164,6 +165,7 @@ footer.ft{
   grid-area: of3;
 }
 .so{
+  grid-template-columns: 1fr;
   grid-template-areas:
                       "of"
                       "of1"
