@@ -3,7 +3,7 @@
  <head>
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1">
-   <link href="css/normalize.css" rel="stylesheet" type="text/css" media="screen">
+   <link href="../css/normalize.css" rel="stylesheet" type="text/css" media="screen">
    <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates" rel="stylesheet">
    <link href="../css/ss.css" rel="stylesheet" type="text/css" media="screen">
 
@@ -87,9 +87,9 @@
       <div class="sc">
         <h4>Social</h4>
         <ul>
-          <li><a href="https://www.facebook.com"><img src="img/facebook.png" alt="Facebook" title="Facebook" /></a></li>
-          <li><a href="https://www.instagram.com"><img src="img/instagram.png" alt="Instagram" title="Instagram" /></a></li>
-          <li><a href="https://www.twitter.com"><img src="img/twitter.png" alt="Twitter" title="Twitter" /></a></li>
+          <li><a href="https://www.facebook.com"><img src="../img/facebook.png" alt="Facebook" title="Facebook" /></a></li>
+          <li><a href="https://www.instagram.com"><img src="../img/instagram.png" alt="Instagram" title="Instagram" /></a></li>
+          <li><a href="https://www.twitter.com"><img src="../img/twitter.png" alt="Twitter" title="Twitter" /></a></li>
         </ul>
       </div>
       <div class="th">
